@@ -1,0 +1,108 @@
+/* --- 
+==============================================
+  PROJECTS PAGE-SPECIFIC STYLES
+============================================== 
+--- */
+
+.projects-main-content {
+    /* Add space for the fixed navbar */
+    padding-top: 100px; 
+}
+
+/* Page Header */
+.projects-page-hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    padding: 0 5%;
+}
+
+.projects-page-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+}
+
+.projects-page-hero p {
+    font-size: 1.15rem;
+    color: #d0d0d0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Bar */
+.projects-filters-container {
+    margin-bottom: 60px;
+    padding: 0 5%;
+}
+
+.projects-filters {
+    display: flex;
+    flex-wrap: wrap; /* Allows filters to wrap on mobile */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+    background: rgba(0, 229, 255, 0.2);
+    border-color: rgba(0, 229, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+.filter-btn.active {
+    background: #00E5FF; /* Bright cyan */
+    color: #0c0a1d; /* Dark background color */
+    border-color: #00E5FF;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+/* Full Project Grid */
+.projects-full-grid {
+    display: grid;
+    /* This makes it responsive */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 100px auto;
+    padding: 0 5%;
+}
+
+/* ---
+  FILTERING FIX (This prevents overlapping)
+--- */
+.project-card {
+    /* This ensures cards fade/scale smoothly */
+    transition: opacity 0.4s ease, transform 0.4s ease, 
+                height 0.4s ease, padding 0.4s ease, margin 0.4s ease;
+}
+
+.project-card.hide {
+    /* This is what fixes the overlap issue */
+    opacity: 0;
+    transform: scale(0.8);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    pointer-events: none;
+}

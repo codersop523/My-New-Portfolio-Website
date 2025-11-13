@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taher - All Projects</title>
+    
+    <link rel="stylesheet" href="../main_website/styles.css">
+    
+    <link rel="stylesheet" href="project.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="projects-page">
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../main_website/index.html" class="nav-logo">TAHER</a>
+            
+            <ul class="nav-links">
+                <li><a href="../main_website/index.html#home">Home</a></li>
+                <li><a href="../main_website/index.html#about">About</a></li>
+                <li><a href="../main_website/index.html#skills">Skills</a></li>
+                <li><a href="../main_website/index.html#projects">Projects</a></li>
+                <li><a href="../main_website/index.html#testimonials">Testimonials</a></li>
+                <li><a href="../main_website/index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-main-content">
+        
+        <section class="projects-page-hero animated-component fade-in-up">
+            <h1>My Full <span class="highlight">Projects</span></h1>
+            <p>A showcase of my full-stack projects. Use the filters to explore by category.</p>
+        </section>
+
+        <section class="projects-filters-container animated-component fade-in-up">
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+        </section>
+
+        <section class="projects-full-grid">
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project1" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/my first portfolio website.png" alt="my first portfolio website" class="project-thumbnail">
+                    <video src="../video/my first portfolio website.mp4" muted loop class="project-video-thumb"></video>
+                </div>
+                <h4>My First Portfolio Website</h4>
+                <p>A modern, responsive portfolio website showcasing my projects, skills, and creative journey as a web developer.</p>
+            </div>
+
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project2" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/Drum kit.png" alt="Drum kit" class="project-thumbnail">
+                    <video src="../video/Drum Kit.mp4" muted loop class="project-video-thumb"></video>
+                </div>
+                <h4>Drum kit</h4>
+                <p>An interactive drum kit built with HTML, CSS, and JavaScript that plays seven different instrument sounds using mouse clicks or keyboard keys.</p>
+            </div>
+
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project3" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/test you memory.png" alt="test you memory" class="project-thumbnail">
+                    <video src="../video/test your memory.mp4" muted loop class="project-video-thumb"></video>
+                </div>
+                <h4>Test Your Memory</h4>
+                <p>A Test Your memory challenge: watch the flashing color, then repeat the growing sequence by clicking colors in the correct order. One mistake and it’s game over — how far can you go?</p>
+            </div>
+
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project4" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/calculator image.png" alt="calculator" class="project-thumbnail">
+                    <video src="../video/calculator.mp4" muted loop class="project-video-thumb"></video>
+                </div>
+                <h4>Calculator</h4>
+                <p>A simple and responsive calculator built using HTML, CSS, and JavaScript to perform basic arithmetic operations.</p>
+            </div>
+
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project5" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/dice game.png" alt="dice challenge-" class="project-thumbnail">
+                    <video src="../video/dice challenge.mp4" muted loop class="project-video-thumb"></video>
+                </div>
+                <h4>Dice Challenge</h4>
+                <p>A fun two-player dice game built with HTML, CSS, and JavaScript where each refresh rolls new dice, declaring the player with the higher number as the winner.</p>
+            </div>
+
+            <div class="project-card animated-component fade-in-up" 
+                 data-project-id="project6" 
+                 data-category="frontend">
+                <div class="project-media">
+                    <img src="../image/To-Do List image.png" alt="To-Do List image" class="project-thumbnail">
+                    <video src="../video/to do list.mp4" muted loop class="project-video-thumb"></video>
+                </div> 
+                <h4>To Do List</h4>
+                <p>A dynamic to-do list app built with HTML, CSS, and JavaScript that lets users add, delete, and store tasks using local storage.</p>
+            </div>
+
+            </section>
+    </main>
+
+    <div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <video id="modal-video" src="" controls loop></video>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <a href="#" target="_blank" class="cta-button" id="modal-view-project-btn">View Live Project</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column footer-brand animated-component fade-in-up">
+            <a href="../main_website/index.html" class="nav-logo">Taher.</a>
+            <p>Crafting digital experiences, one line of code at a time.</p>
+        </div>
+
+        <div class="footer-column footer-links animated-component fade-in-up">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../main_website/index.html#home">Home</a></li>
+                <li><a href="../main_website/index.html#about">About</a></li>
+                <li><a href="../main_website/index.html#skills">Skills</a></li>
+                <li><a href="../main_website/index.html#projects">Projects</a></li>
+                <li><a href="../main_website/index.html#testimonials">Testimonials</a></li>
+                <li><a href="../main_website/index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-social animated-component fade-in-up">
+            <h4>Connect</h4>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/taher-limdiwala-b6b109333/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/codersop523" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:taherlimdiwala488@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom-bar animated-component fade-in-up">
+        <p>&copy; 2025 Taher. All rights reserved. Crafted with care.</p>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../main_website/rough.js"></script>
+</body>
+</html>

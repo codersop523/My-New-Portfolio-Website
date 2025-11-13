@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taher - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="home-page">
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">TAHER</a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Crafting <span class="highlight">Digital</span> Experiences</h1>
+                <p>
+                    I'm Taher, a Full Stack Developer passionate about building 
+                    sleek, modern, and responsive web applications from the ground up.
+                </p>
+                <a href="#projects" class="cta-button">See My Work</a>
+            </div>
+
+            <div class="hero-visual">
+                <img src="https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/what-is-a-web-developer.jpg" alt="Full Stack Web Developer Workspace" class="dev-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+    <div class="about-container">
+        
+        <div class="about-visual animated-component slide-in-left">
+            <div class="education-card">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <h4>B.Tech in Computer Science</h4>
+                        <p class->Anjuman College of Engineering & Technology, Nagpur</p>
+                        <p class="dates">Currently Persuing</p>
+                    </li>
+                    <li>
+                        <h4>High School Diploma</h4>
+                        <p class->Junior Hislop College, Nagpur</p>
+                        <p class="dates">2022 - 2024</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-text animated-component slide-in-right">
+            <h2>About <span class="highlight">Me</span></h2>
+            <p>
+                I'm a results-driven Full Stack Developer with a deep passion for 
+                turning complex ideas into elegant, functional web applications. 
+                My journey in tech began with a simple "Hello World," and has 
+                evolved into a career dedicated to building intuitive and 
+                high-performance digital experiences.
+            </p>
+            <p>
+                I thrive in environments that challenge me to learn and adapt, 
+                and I'm always exploring new technologies to stay ahead of the curve. 
+                My goal is to not just write code, but to build solutions that 
+                make a real-world impact.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <div class="skills-container">
+
+        <h2 class="animated-component fade-in-up">
+            My Tech <span class="highlight">Stack</span>
+        </h2>
+        <p class="skills-intro animated-component fade-in-up">
+            Here are the technologies I work with to build modern, 
+            high-performance web applications.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card animated-component fade-in-up">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Sass/SCSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-card animated-component fade-in-up">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python (Django/Flask)</li>
+                    <li>REST APIs</li>
+                    <li>GraphQL</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+
+            <div class="skill-card animated-component fade-in-up">
+                <h3>Databases</h3>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Redis</li>
+                    <li>Prisma (ORM)</li>
+                    <li>SQLAlchemy</li>
+                </ul>
+            </div>
+
+            <div class="skill-card animated-component fade-in-up">
+                <h3>Tools & DevOps</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Docker</li>
+                    <li>Vite / Webpack</li>
+                    <li>Vercel / Netlify</li>
+                    <li>AWS (S3, EC2)</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="projects-container">
+
+        <h2 class="animated-component fade-in-up">
+            My Recent <span class="highlight">Work</span>
+        </h2>
+        <p class="projects-intro animated-component fade-in-up">
+            A glimpse into some of my recent full-stack development projects, 
+            blending creativity with robust functionality.
+        </p>
+
+        <div class="project-slider-wrapper animated-component fade-in-up">
+            <div class="project-slider">
+
+                <div class="project-card" data-project-id="project1">
+                    <div class="project-media">
+                        <img src="../image/my first portfolio website.png" alt="My First Portfolio Website" class="project-thumbnail">
+                        <video src="../video/my first portfolio website.mp4" muted loop class="project-video-thumb"></video>
+                    </div>
+                    <h4>My First Portfolio Website</h4>
+                    <p>A modern, responsive portfolio website showcasing my projects, skills, and creative journey as a web developer.</p>
+                </div>
+
+                <div class="project-card" data-project-id="project2">
+                    <div class="project-media">
+                        <img src="../image/Drum kit.png" alt="Drum Kit" class="project-thumbnail">
+                        <video src="../video/Drum Kit.mp4" muted loop class="project-video-thumb"></video>
+                    </div>
+                    <h4>Drum kit</h4>
+                    <p>An interactive drum kit built with HTML, CSS, and JavaScript that plays seven different instrument sounds using mouse clicks or keyboard keys.</p>
+                </div>
+
+                <div class="project-card" data-project-id="project3">
+                    <div class="project-media">
+                        <img src="../image/test you memory.png" alt="Test Your Memory" class="project-thumbnail">
+                        <video src="../video/test your memory.mp4" muted loop class="project-video-thumb"></video>
+                    </div>
+                    <h4>Test Your Memory</h4>
+                    <p>A Test Your memory challenge: watch the flashing color, then repeat the growing sequence by clicking colors in the correct order. One mistake and it’s game over — how far can you go?</p>
+                </div>
+
+                <div class="project-card" data-project-id="project4">
+                    <div class="project-media">
+                        <img src="../image/calculator image.png" alt="Calculator" class="project-thumbnail">
+                        <video src="../video/calculator.mp4" muted loop class="project-video-thumb"></video>
+                    </div>
+                    <h4>Calculator</h4>
+                    <p>A simple and responsive calculator built using HTML, CSS, and JavaScript to perform basic arithmetic operations.</p>
+                </div>
+                
+                </div>
+        </div>
+
+        <a href="../project page/index.html" class="cta-button see-more-btn animated-component fade-in-up">
+            View All Projects
+        </a>
+
+    </div>
+</section>
+
+<div id="project-modal" class="project-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+            <video id="modal-video" src="" controls loop></video>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <a href="#" target="_blank" class="cta-button" id="modal-view-project-btn">View Live Project</a>
+        </div>
+    </div>
+</div>
+
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+
+        <h2 class="animated-component fade-in-up">
+            What People <span class="highlight">Say</span>
+        </h2>
+
+        <div class="testimonial-slider-wrapper animated-component fade-in-up">
+            <div class="testimonial-slider">
+
+                <div class="testimonial-slide">
+                    <img src="../image/Friendly Young Avatar in Blue.png" alt="Client Avatar" class="client-avatar">
+                    <p class="quote-text">
+                        "Working with Taher was a fantastic experience. He transformed our 
+                        vision into a responsive, high-performance web app. His attention to 
+                        detail and commitment to quality is unparalleled."
+                    </p>
+                    <p class="client-name">Burhanuddin Limdiwala</p>
+                    <p class="client-title">CEO, E-Digital Studio</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <img src="../image/Friendly Avatar with Warm Tones.png" alt="Client Avatar" class="client-avatar">
+                    <p class="quote-text">
+                        "Taher is a true professional. He's not just a developer, 
+                        but a problem-solver. He tackled every challenge with a 
+                        positive attitude and delivered a product that exceeded 
+                        our expectations."
+                    </p>
+                    <p class="client-name">Taha Ayya</p>
+                    <p class="client-title">Btech Student, CSE</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <img src="../image/Friendly Portrait in Muted Tones.png" alt="Client Avatar" class="client-avatar">
+                    <p class="quote-text">
+                        "The entire full-stack implementation was flawless. From the database 
+                        schema to the pixel-perfect frontend, Taher's expertise 
+                        shone through. I would highly recommend him."
+                    </p>
+                    <p class="client-name">Zehra Limdiwala</p>
+                    <p class="client-title">Mother</p>
+                </div>
+
+            </div>
+
+            <div class="slider-dots">
+                </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2 class="animated-component slide-in-left">
+                Get in <span class="highlight">Touch</span>
+            </h2>
+            <p class="animated-component slide-in-left">
+                I'm currently open to new opportunities and collaborations. 
+                Whether you have a project in mind or just want to connect, 
+                feel free to reach out. Let's build something amazing together!
+            </p>
+
+            <div class="social-media-links animated-component slide-in-left">
+                <a href="https://www.linkedin.com/in/taher-limdiwala-b6b109333/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/codersop523" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:taherlimdiwala488@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper animated-component slide-in-right">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="1db8475a-701f-4f2d-abb9-9bf7493dff8e">
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                    <label for="name" class="form-label">Your Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                    <label for="email" class="form-label">Your Email</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                    <label for="subject" class="form-label">Subject</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-input" rows="5" placeholder=" " required></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                </div>
+                
+                <button type="submit" class="cta-button form-submit-btn">
+                    Send Message
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column footer-brand animated-component fade-in-up">
+            <a href="#home" class="nav-logo">Taher.</a>
+            <p>Crafting digital experiences, one line of code at a time.</p>
+        </div>
+
+        <div class="footer-column footer-links animated-component fade-in-up">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-social animated-component fade-in-up">
+            <h4>Connect</h4>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/taher-limdiwala-b6b109333/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/codersop523" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:taherlimdiwala488@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom-bar animated-component fade-in-up">
+        <p>&copy; 2025 Taher. All rights reserved. Crafted with care.</p>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="rough.js"></script>
+</body>
+</html>
